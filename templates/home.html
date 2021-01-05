@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sanskrit Translator</title>
+    <style>
+        body{
+
+background-image: url({{ url_for('static', filename='cool-background.png') }})
+
+
+}
+
+
+    </style>
+</head>
+<body style="background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;">
+<center>
+    <h1 STYLE="font-family:verdana;"> SANSKRIT TRANSLATOR</h1>
+    <br><br><br><br>
+<div style="background-color:#66ff99;height:225px;width:850px;border-radius:25px">
+    <h2>Type your word here</h2>
+
+<form action="/translate" method="post" enctype="multipart/form-data">
+    <input name="eng" size="40" required="required" style="font-size:24px;"/>
+    <button name="Submit" style="font-size:21px;">TRANSLATE</button>
+
+
+</form>
+    <h4 STYLE="BACKGROUND-COLOR:#ffff66;font-size:20px;"> <b style="font-size:24px;">Result: </b>
+{{b}}
+        <i style="color: #737373;">  {{c}}</i></h4>
+        </div>
+    </center>
+</body>
+</html>
