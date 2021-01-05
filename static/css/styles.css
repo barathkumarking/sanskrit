@@ -1,0 +1,26 @@
+
+body
+{
+	margin:0px;
+}
+.title
+{
+	font-size:70px;
+	padding-left:150px;
+	padding-top:150px;
+	font-weight:bold;
+	background-color:red;
+	color:white;
+	
+}
+.tutorial
+{
+	font-weight:bold;
+	font-size:50px;
+	margin-left:50px;
+	color:#e84141;
+}
+iframe
+{
+	margin-left:300px;
+}
