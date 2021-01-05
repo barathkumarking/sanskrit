@@ -31,5 +31,11 @@ def translate():
         b=x["Sanskrit"]
         c=x['Reading']
     return render_template("home.html",b=b,c=c)
+
+@app.errorhandler(500)
+def errorhandler():
+    return render_template("error.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
